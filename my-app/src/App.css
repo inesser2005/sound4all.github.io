@@ -1,0 +1,114 @@
+/* Seccção do Geral*/
+body {
+    background-color: #212529 !important;
+    /* Um cinza muito escuro/preto */
+    color: white;
+    /* Garante que os textos fora dos cards sejam brancos */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 100px !important;
+}
+
+
+/* Seccção do Menu/Navbar*/
+.menu_bg_color {
+    background-color: #0F8B8D;
+}
+
+
+/* Secção do Home */
+.feature-box {
+    background-color: #1a1a1a !important; /* Um cinza um pouco mais claro que o fundo */
+    border: 1px solid #0F8B8D !important; /* Borda turquesa fina */
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background-color: #0F8B8D !important; /* Fica todo turquesa no hover */
+}
+
+/* Garante que o texto mude para branco total no hover do bloco */
+.feature-box:hover h3, 
+.feature-box:hover p, 
+.feature-box:hover i, 
+.feature-box:hover a {
+    color: white !important;
+}
+
+
+
+
+/* Seccção dos cards */
+
+/* card para a animação */
+.card {
+    background-color: #0F8B8D !important;
+    border: 1px solid #333 !important;
+    transition: all 0.3s ease-in-out !important;
+    /* "all" garante que apanha a posição e a sombra */
+    position: relative;
+    /* Necessário para o translateY funcionar bem */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Força a levitação no Hover */
+.card:hover {
+    transform: translateY(-15px) !important;
+    /* Aumentei para 15px para ser bem visível */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6) !important;
+    border-color: #ffffff !important;
+    cursor: pointer;
+    z-index: 10;
+    /* Garante que o card fica por cima dos outros ao subir */
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    /* Remove qualquer transparência do Bootstrap */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
+
+/* Seccção da "loja"*/
+
+/* Cor dos Botões "Adicionar" */
+.btn-adicionar {
+    background-color: #20adaf !important;
+    border-color: #0F8B8D !important;
+    color: white !important;
+    transition: filter 0.3s ease;
+}
+
+.btn-adicionar:hover {
+    filter: brightness(1.2); /* Fica mais clarinho ao passar o rato */
+    background-color: #0F8B8D !important;
+}
+
+/* Cor das Badges (Categorias) */
+.badge-categoria {
+    background-color: #ffffff !important; /* Branco para contrastar com o card turquesa */
+    color: #0F8B8D !important;           /* Texto na cor do card */
+    font-weight: bold;
+}
+
+/* Cor do Botão do Carrinho (no topo) */
+.btn-carrinho {
+    border-color: #0F8B8D !important;
+    color: #0F8B8D !important;
+}
+
+.btn-carrinho strong {
+    color: #ffffff; /* Número de itens em branco para destacar */
+}
