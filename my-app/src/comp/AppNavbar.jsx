@@ -1,6 +1,7 @@
 import React from "react";
 // Removi o Nav do react-bootstrap para evitar conflito
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Sound4all from '../assets/Sound4all.png'
 
 // Mudei o nome para AppNavbar para ser mais claro, ou mantém Nav mas remove o import acima
 export default function AppNavbar() {
@@ -17,10 +18,10 @@ export default function AppNavbar() {
     return (
         <nav className="navbar navbar-dark menu_bg_color fixed-top">
             <div className="container-fluid">
-                <p className="navbar-brand" >Sound4all</p>
+                <img src={Sound4all}   style={{ width: '200px', height: 'auto' }}  alt="" />
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </button>"
                 <div className="offcanvas offcanvas-end text-bg-dark" tabIndex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Sound4all</h5>
